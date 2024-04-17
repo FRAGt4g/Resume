@@ -1,0 +1,33 @@
+body {
+    background-color: darkslategray;
+}
+
+#background-glow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+
+    width: 100vmin;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.3);
+
+    /* filter: blur(300px); */
+    z-index: -2;
+}
+
+#blur-500 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    
+    /* -webkit-backdrop-filter: blur(300px); */
+    backdrop-filter: blur(200px);
+
+    z-index: -1;
+}
