@@ -1,2 +1,3 @@
-<link rel="stylesheet" type="text/css" href="{{ url_for('css', bp=bp_adress, filename='[Base]_'+bp_adress+'.css') }}">
-<script src="{{ url_for('js', bp=bp_adress, filename='[Base]_'+bp_adress+'.js') }}"></script>
+<link defer rel="stylesheet" href="{{ url_for('universal_css', filename='variables.css') }}" type="text/css">
+<link defer rel="stylesheet" type="text/css" href="{{ url_for('css', bp=bp_adress, filename='[Base]_'+bp_adress+'.css') }}">
+<script defer src="{{ url_for('js', bp=bp_adress, filename='[Base]_'+bp_adress+'.js') }}"></script>

@@ -1,0 +1,13 @@
+:root {
+    --background:   rgb(var(--RGB_VALUES-background));
+    --text:         rgb(var(--RGB_VALUES-text));
+    --primary:      rgb(var(--RGB_VALUES-primary));
+    --secondary:    rgb(var(--RGB_VALUES-secondary));
+    --accent:       rgb(var(--RGB_VALUES-accent));
+
+    --RGB_VALUES-background:   006, 016, 020;
+    --RGB_VALUES-text:         248, 232, 228;
+    --RGB_VALUES-primary:      242, 112, 112;
+    --RGB_VALUES-secondary:    228, 186, 219;
+    --RGB_VALUES-accent:       104, 196, 191;
+}

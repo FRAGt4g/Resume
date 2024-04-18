@@ -15,6 +15,19 @@ app.register_blueprint(contact_bp, url_prefix='/Contact')
 def route_to_main():
     return redirect('/Home')
 
+#Used to route to Universal folder
+@app.route('/Universal/CSS/<filename>')
+def universal_css(filename):
+    print(filename)
+    file = send_from_directory('Universal/CSS', filename)
+    print(str(file.content_type))
+    return file
+
+#Used to route to Universal folder
+@app.route('/Universal/HTML/<filename>')
+def universal_html(filename):
+    return send_from_directory('Universal/HTML', filename)
+
 #Used to route to css folder within each blueprint
 @app.route('/CSS/<bp>/<filename>')
 def css(bp, filename):
