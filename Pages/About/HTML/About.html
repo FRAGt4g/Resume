@@ -8,8 +8,89 @@
     {% include 'imports.html' %}
 </head>
 <body>
-    <h1>
-        THIS IS ALL ABOUT ME :)
-    </h1>
+    {% with color="purple" %} {% include 'navbar.html' %} {% endwith %}
+
+    <div class="container">
+        <h1 class="gradient-teal-purple-text">
+            Languages
+        </h1>
+        <div>
+            <div class="row">
+                <div class="tile"> HTML </div>
+                <div class="tile"> CSS </div>
+                <div class="tile"> JavaScript </div>
+                <div class="tile"> ThreeJS </div>
+            </div>
+            <div class="row">
+                <div> Java </div>
+                <div>
+                    Python
+                </div>
+                <div>
+                    C#
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    C
+                </div>
+                <div>
+                    C++
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    Git
+                </div>
+                <div>
+                    Markdown
+                </div>
+            </div>
+            <!-- <table>
+                <tr>
+                    <td>
+                        HTML
+                    </td>
+                    <td>
+                        CSS
+                    </td>
+                    <td>
+                        JavaScript
+                    </td>
+                    <td>
+                        ThreeJS
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Java
+                    </td>
+                    <td>
+                        Python
+                    </td>
+                    <td>
+                        C#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        C
+                    </td>
+                    <td>
+                        C++
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Git
+                    </td>
+                    <td>
+                        Markdown
+                    </td>
+                </tr>
+
+            </table> -->
+        </div>
+    </div>
 </body>
 </html>

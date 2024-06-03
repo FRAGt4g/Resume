@@ -1,0 +1,104 @@
+nav {
+    backdrop-filter: blur(50px);
+    background-color: rgba(var(--RGB_VALUES-background), 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 2.5vw;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+    width: 95vw;
+}
+
+nav.teal {
+    background: linear-gradient(
+        110deg,
+        rgba(var(--RGB_VALUES-background), 0.8) 5%,
+        rgba(var(--RGB_VALUES-accent), 0.2) 100%
+    );
+}
+nav.teal .active {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+nav.red {
+    background: linear-gradient(
+        110deg,
+        rgba(var(--RGB_VALUES-background), 0.8) 5%,
+        rgba(var(--RGB_VALUES-primary), 0.2) 100%
+    );
+}
+nav.red .active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+nav.purple {
+    background: linear-gradient(
+        110deg,
+        rgba(var(--RGB_VALUES-background), 0.8) 5%,
+        rgba(var(--RGB_VALUES-secondary), 0.2) 100%
+    );
+}
+nav.purple .active {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+nav .navigation-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .navigation-elements>li {
+    list-style: none;
+    padding: 3px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    min-width: 100px;
+}
+
+nav .navigation-elements>li>a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+nav .navigation-elements>li>a:not(.active) {
+    color: rgb(var(--RGB_VALUES-text));
+}
+
+nav>#Name {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(var(--RGB_VALUES-text));
+    margin: 0;
+}
+
+nav .active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+#navbar-bumper {
+    height: 69px;
+    width: 100vw;
+    background-color: var(--background);
+}

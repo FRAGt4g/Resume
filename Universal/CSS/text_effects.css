@@ -1,0 +1,48 @@
+.underline-hover {
+    position: relative;
+    transition: color 0.5s ease-in-out;
+}
+
+.underline-hover:after {
+    content: "";
+
+    position: absolute;
+    bottom: clamp(-10px, -20%, 30px);
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 2px;
+
+    background-color: rgb(var(--RGB_VALUES-primary));
+    transition: width 0.2s ease-in-out;
+
+    border-radius: 3px;
+}
+
+.underline-hover.teal:after {
+    background-color: rgb(var(--RGB_VALUES-accent));
+}
+.underline-hover.red:after {
+    background-color: rgb(var(--RGB_VALUES-primary));
+}
+.underline-hover.purple:after {
+    background-color: rgb(var(--RGB_VALUES-secondary));
+}
+
+.underline-hover:hover:after {
+    width: calc(100% + 10px);
+}
+
+.gradient-teal-purple-text {
+    background: linear-gradient(
+        110deg,
+        rgba(var(--RGB_VALUES-secondary)),
+        rgba(var(--RGB_VALUES-accent))
+    );
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
