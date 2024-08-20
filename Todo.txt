@@ -1,0 +1,4 @@
+- Make the hero banner sit behind the rest of the page which will scroll infront of the hero banner page
+- Add nice backgrounds to all pages
+- Nicer scrollbar
+- Background mouse glow

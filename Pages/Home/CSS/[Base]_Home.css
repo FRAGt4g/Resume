@@ -89,11 +89,11 @@ body {
 	position: absolute !important;
 	bottom: 0vh;
 	left: 50vw;
+	width: 90vw;
 	transform: translateX(-50%);
 	
-	color: rgba(var(--RGB_VALUES-background), 0.5);
-	font-size: max(30px, 0.1vw);
-	/* text-shadow: 0 0 10px black; */
+	color: rgba(var(--RGB_VALUES-background), 0.8);
+	font-size: 0.8em;
 }
 
 .block {
